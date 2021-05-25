@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String url = "https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?userAction=&sort=1&rows=5&isremember=true&DEALER=1&PRICE_TO=5000&periode=2";
+        String url = "http:example.com";
         File caFilePath = new File(getApplicationContext().getFilesDir(), "cacert.pem");
         android.util.Log.i("TEST", "PATH=" + caFilePath.getAbsolutePath());
         Log.i("TEST", "RESP="+request(url, caFilePath.getAbsolutePath()));
