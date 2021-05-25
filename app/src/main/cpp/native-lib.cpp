@@ -27,7 +27,7 @@ Java_test_jni_cpr_MainActivity_request(
     session.SetUrl(cpr::Url{cUrl});
 
     #ifdef ANDROID
-    auto sslOpts  = cpr::Ssl(cpr::ssl::CaPath{caFilePath.c_str()});
+    auto sslOpts  = cpr::Ssl(cpr::ssl::CaInfo{caFilePath.c_str()});
     session.SetOption(sslOpts);
     #endif // ANDROID
 
